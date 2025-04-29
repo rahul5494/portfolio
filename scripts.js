@@ -1,6 +1,3 @@
-document.getElementById("close-ad").addEventListener("click", function() {
-    document.getElementById("ad-overlay").style.display = "none";
-  });
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.getElementById('nav-links');
 AOS.init({ duration: 600, easing: 'ease-in-out', once: false });
@@ -51,7 +48,16 @@ if (modal) {
       const blogTitle = e.target.previousElementSibling.previousElementSibling.textContent;
       const blog = blogs.find(b => b.title === blogTitle);
       modalTitle.textContent = blog.title;
-      modalContent.textContent = blog.content;
+      modalContent.textContent = blog.content + `<script type="text/javascript">
+      atOptions = {
+        'key' : 'b919ec4d6ef6ef7895bba6dfe33e3055',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/b919ec4d6ef6ef7895bba6dfe33e3055/invoke.js"></script>`;
       modal.style.display = 'block';
     }
   });
