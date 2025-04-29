@@ -48,7 +48,7 @@ if (modal) {
       const blogTitle = e.target.previousElementSibling.previousElementSibling.textContent;
       const blog = blogs.find(b => b.title === blogTitle);
       modalTitle.textContent = blog.title;
-      modalContent.textContent = blog.content + `<script type="text/javascript">
+      modalContent.innerHTML = blog.content + `<script type="text/javascript">
       atOptions = {
         'key' : 'b919ec4d6ef6ef7895bba6dfe33e3055',
         'format' : 'iframe',
