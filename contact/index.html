@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Contact DevRahul for web development and content writing services.">
+  <meta name="keywords" content="contact, web development, content writing, DevRahul">
+  <title>DevRahul - Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav data-aos="fade-down">
+    <div class="logo">DevRahul</div>
+    <ul id="nav-links">
+      <li><a href="/" data-aos="fade-right" data-aos-delay="100"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="/projects" data-aos="fade-right" data-aos-delay="200"><i class="fas fa-folder"></i> Projects</a></li>
+      <li><a href="/contact" id="active" data-aos="fade-right" data-aos-delay="300"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="/about" data-aos="fade-right" data-aos-delay="400"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="/blogs" data-aos="fade-right" data-aos-delay="500"><i class="fas fa-blog"></i> Blogs</a></li>
+    </ul>
+    <div class="hamburger" data-aos="fade-left">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <section class="contact" data-aos="fade-up">
+    <h2 data-aos="zoom-in">Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info" data-aos="fade-right">
+        <h3 data-aos="fade-up">Get in Touch</h3>
+        <p data-aos="fade-up" data-aos-delay="100"><i class="fas fa-envelope"></i> rahulkumarprajapat600@gmail.com</p>
+        <p data-aos="fade-up" data-aos-delay="200"><i class="fas fa-phone"></i> +91 9772539583</p>
+        <p data-aos="fade-up" data-aos-delay="300"><i class="fab fa-linkedin"></i> <a target="_blank" href="https://linkedin.com/in/rahul-kumar-90a9652ba">LinkedIn</a></p>
+        <p data-aos="fade-up" data-aos-delay="400"><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/rahul5494">GitHub</a></p>
+        <p data-aos="fade-up" data-aos-delay="500"><i class="fab fa-instagram"></i> <a target="_blank" href="https://instagram.com/rahul_x.94">Instagram</a></p>
+      </div>
+      <form id="contact-form" action="https://formspree.io/f/xqaqavkw" method="POST" data-aos="fade-left">
+        <h3 data-aos="fade-up">Send a Message</h3>
+        <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="500">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="video-section" data-aos="fade-up">
+    <h2 data-aos="zoom-in">Connect with Me</h2>
+    <video autoplay loop poster="contact-video-poster.jpg" loading="lazy" data-aos="zoom-in">
+      <source src="contact-video.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>© 2025 DevRahul. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Blog by DevRahul, sharing insights on web development and content writing.">
+  <meta name="keywords" content="blog, web development, content writing, DevRahul">
+  <title>DevRahul - Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav data-aos="fade-down">
+    <div class="logo">DevRahul</div>
+    <ul id="nav-links">
+      <li><a href="/" data-aos="fade-right" data-aos-delay="100"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="/projects" data-aos="fade-right" data-aos-delay="200"><i class="fas fa-folder"></i> Projects</a></li>
+      <li><a href="/contact" data-aos="fade-right" data-aos-delay="300"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="/about" data-aos="fade-right" data-aos-delay="400"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="/blogs" data-aos="fade-right" data-aos-delay="500" id="active"><i class="fas fa-blog"></i> Blogs</a></li>
+    </ul>
+    <div class="hamburger" data-aos="fade-left">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <section class="blog" data-aos="fade-up">
+    <h2 data-aos="zoom-in">Blog</h2>
+    <div class="blog-grid" id="blog-grid"></div>
+    <button id="load-more" data-aos="fade-in">Load More</button>
+  </section>
+
+  <div id="blog-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-content"></p>
+    </div>
+  </div>
+
+  <section class="video-section" data-aos="fade-up">
+    <h2 data-aos="zoom-in">Blog Insights</h2>
+    <video autoplay loop poster="blog-video-poster.jpg" loading="lazy" data-aos="zoom-in">
+      <source src="blog-video.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>© 2025 DevRahul. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="blogs.js"></script>
+  <script src="/scripts.js"></script>
+</body>
+</html>
