@@ -1,3 +1,6 @@
+document.getElementById("close-ad").addEventListener("click", function() {
+    document.getElementById("ad-overlay").style.display = "none";
+  });
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.getElementById('nav-links');
 AOS.init({ duration: 600, easing: 'ease-in-out', once: false });
